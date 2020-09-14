@@ -1,5 +1,5 @@
-root: {
-}
+/* root: {
+} */
 
 * {
     margin: 0;
@@ -23,10 +23,6 @@ body {
 main {
     /* position: relative; */
     z-index: 2;
-}
-
-.main-container {
-    
 }
 
 .content-container {
