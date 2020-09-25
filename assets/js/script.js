@@ -1,14 +1,14 @@
 // globals 
-var mainContainerEl = $("#main-container");
+var contentContainerEl = $("#content-container");
 
 //add this var to the beginning of each new DOM generated page
 var destroyElement = function () {
-    mainContainerEl.html(null);
+    contentContainerEl.html(null);
 }
 
 displayWaifu = function () {
     destroyElement();
-    mainContainerEl.html(
+    contentContainerEl.html(
         `⠄⠄⠄⢰⣧⣼⣯⠄⣸⣠⣶⣶⣦⣾⠄⠄⠄⠄⡀⠄⢀⣿⣿⠄⠄⠄⢸⡇⠄⠄<br/>
         ⠄⠄⠄⣾⣿⠿⠿⠶⠿⢿⣿⣿⣿⣿⣦⣤⣄⢀⡅⢠⣾⣛⡉⠄⠄⠄⠸⢀⣿⠄<br/>
         ⠄⠄⢀⡋⣡⣴⣶⣶⡀⠄⠄⠙⢿⣿⣿⣿⣿⣿⣴⣿⣿⣿⢃⣤⣄⣀⣥⣿⣿⠄ <br/>
@@ -24,5 +24,8 @@ displayWaifu = function () {
         ⠄⠄⠄⠄⠈⠛⢿⣿⣿⣿⠁⠞⢿⣿⣿⡄⢿⣿⡇⣸⣿⣿⠿⠛⠁⠄⠄⠄⠄⠄ <br/>
         ⠄⠄⠄⠄⠄⠄⠄⠉⠻⣿⣿⣾⣦⡙⠻⣷⣾⣿⠃⠿⠋⠁⠄⠄⠄⠄⠄⢀⣠⣴ <br/>
         ⣿⣿⣿⣶⣶⣮⣥⣒⠲⢮⣝⡿⣿⣿⡆⣿⡿⠃⠄⠄⠄⠄⠄⠄⠄⣠⣴⣿⣿⣿ <br/>
-        `)
+        <br/><br/><br/>actual content coming sooonnnn <br />
+        `).addClass("display-waifu");
 };
+
+$("#click-me").on("click", displayWaifu);
